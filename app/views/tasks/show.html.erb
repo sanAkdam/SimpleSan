@@ -1,0 +1,12 @@
+<h4 class="text-center">
+  <strong>Content:</strong>
+  <%= @task.content %>
+</h4>
+
+<h4 class="text-center">
+  <strong>State:</strong>
+  <%= @task.state %>
+</h4>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

@@ -1,0 +1,7 @@
+<%= simple_form_for(@task, html: {class: "form-signin"}) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :content, required: true, autofocus: true, input_html: {class: "form-control"} %>
+    <%= f.input :state, required: true, autofocus: true, input_html: {class: "form-control"} %>
+    <%= f.button :submit, class: "btn btn-primary btn-block" %>
+<% end %>
